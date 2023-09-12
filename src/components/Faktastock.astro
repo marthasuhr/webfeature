@@ -1,0 +1,60 @@
+---
+
+---
+
+
+ <h2>HVAD ER STOCK-FOTOS?</h2>
+<div class="stockfotos">
+ <img class="stock1" src="public/img/scan.jpg" alt="Hænder der holder sammen">
+<img class="stock2" src="public/img/scan.jpg" alt="To kvinder kigger på computer">
+<img class="stock3" src="public/img/scan.jpg" alt="En kvinde er på apoteket">
+<img class="stock4" src="public/img/scan.jpg" alt="To mennesker giver high-five">
+<img class="stock5" src="public/img/scan.jpg" alt="Gruppe planlægger på computer">
+</div>
+ 
+
+
+<style>
+
+    @media (min-width: 900px) {
+
+.fakta_stock {
+    padding: 3rem;
+    margin: 6rem 22rem 6rem 22rem;
+}
+}
+
+
+/* STOCKFOTOS LAYOUT */
+.stockfotos {
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    gap: 10px;
+  }
+
+  .stock1 {
+    grid-column: 4/9;
+    grid-row: 7/11;
+  }
+
+  .stock2 {
+    grid-column: 7/12;
+    grid-row: 5/8;
+  }
+
+  .stock3 {
+    grid-column: 11/18;
+    grid-row: 3/7;
+  }
+
+ .stock4 {
+    grid-column: 8/14;
+    grid-row: 8/11;
+  }
+
+  .stock5 {
+    grid-column: 13/20;
+    grid-row: 7/10;
+  }
+
+</style>

@@ -2,6 +2,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: rgb(39, 28, 24);
+}
+
+main {
+  margin: 5rem 3rem 5rem 3rem;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -9,21 +18,43 @@ img {
 }
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Odibee Sans", cursive;
   font-size: 3.5rem;
 }
 
 h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-family: "Odibee Sans", cursive;
+  font-size: 2.3rem;
+  color: white;
+  text-align: center;
+  padding-bottom: 3rem;
 }
 
 h3 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "GFS Neohellenic", sans-serif;
   font-size: 1.5rem;
+  font-weight: 100;
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
+  font-family: "GFS Neohellenic", sans-serif;
+}
+
+@media (min-width: 900px) {
+  main {
+    margin: 5rem 3rem 5rem 3rem;
+  }
+  h2 {
+    font-size: 6rem;
+    padding-bottom: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
 }

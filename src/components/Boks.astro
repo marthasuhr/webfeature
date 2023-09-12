@@ -1,0 +1,48 @@
+---
+const { box } = Astro.props
+---
+
+<section>
+    <div class={box}>
+    <p> <slot/> </p>
+    </div>
+</section>
+
+<style>
+    
+    .box1,
+    .box2{
+
+    }
+
+    .box1{
+        background-color: #DBDBDB;
+    padding: 1.5rem;
+        margin: 3rem 0rem 3rem 0rem;
+            color: black;
+    }
+
+    .box2
+{
+    background-color:#112A36 ;
+    padding:1.5rem;
+        margin: 3rem 0rem 3rem 0rem;
+          color: white;
+}
+
+ @media (min-width: 900px) {
+
+.box1 {
+    padding: 3rem;
+    margin: 6rem 22rem 6rem 22rem;
+}
+
+/* FAKTABOKS 2 + <p/>*/
+.box2 {
+    padding: 3rem;
+        margin: 6rem 22rem 6rem 22rem;
+}}
+/*  */
+
+
+</style>
