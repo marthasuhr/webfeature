@@ -4,9 +4,9 @@
 
 <section>
 
-    <img src="img/startcitat.svg" alt="startcitat">
+    <img class="svg_quote" src="img/startcitat.svg" alt="startcitat">
     <h3> <slot /> </h3>
-        <img src="img/slutcitat.svg" alt="slutcitat">
+        <img class="svg_quote" src="img/slutcitat.svg" alt="slutcitat">
 
 
      
@@ -15,7 +15,7 @@
 <style>
 
 
-img{
+.svg_quote{
         max-width: 40px;
 
     }
@@ -24,12 +24,10 @@ img{
       
         display: flex;
         flex-wrap: wrap;
-        margin: 0rem 5rem 0rem 5rem;
+
     overflow: hidden;
     }
-      body{
-         background-image: url('img/scan.jpg');
-    }
+   
 
 @media (min-width: 600px) {
     
@@ -38,9 +36,7 @@ img{
 
     }
 
-    section{
-        margin: 0rem 22rem 0rem 22rem;
-    }
+   
 
     
 }
