@@ -1,0 +1,137 @@
+---
+import Baselayout from "../layouts/Baselayout.astro"
+import "../styles/style.css"
+import Faktaboks from "../components/Faktaboks.astro"
+---
+
+<Baselayout>
+<body>
+    <main>
+    
+ <h2>HVAD ER STOCK-FOTOS?</h2>
+<div class="stockfotos">
+ <img class="stock1" src="public/img/scan.jpg" alt="Hænder der holder sammen">
+<img class="stock2" src="public/img/scan.jpg" alt="To kvinder kigger på computer">
+<img class="stock3" src="public/img/scan.jpg" alt="En kvinde er på apoteket">
+<img class="stock4" src="public/img/scan.jpg" alt="To mennesker giver high-five">
+<img class="stock5" src="public/img/scan.jpg" alt="Gruppe planlægger på computer">
+</div>
+ 
+
+  <div class="fakta_stock"><p class="faktabox_tekst">Stock-fotos er billeder, der kan købes fra et foto-website. De bruges af aviser, til markedsføring og som indhold på websites. En licens til at bruge et foto koster typisk mellem 10 og 100 kroner, alt afhængig af hvad de skal bruges til.</p></div> 
+  <div class="fakta_stock"><p class="faktabox_tekst">Stock-fotos bliver ofte kritiseret for at være uden sjæl - det er de der billeder af en læge i hvid kittel med stetoskop om halsen på en meget hvid baggrund eller en meget glad dame fra virksomhedens salgs- eller supportafdeling.</p></div> 
+  <div class="fakta_stock"><p class="faktabox_tekst">Stock-fotos har eksisteret i mange år.
+Før branchen blev digital, tilbød stock-foto virksomhederne billedmapper, der kunne bestilles fra. Men stock-foto branchen var én af de tidlige til at blive fuldt digitaliseret.</p></div> 
+
+
+<img class="faktaboks2_img" src="public/img/scan.jpg" alt="filmrulle">
+<div class="fakta_2"><p class="faktabox_tekst2">Han søgte inspiration i analog fotografering, i Lomo-bevægelsen, Glitch art og polaroid fotografering, og begyndte stille og roligt at skabe sig en ny stil - en stil med fokus på det uperfekte, og hvor der er et uforudsigeligt element i det at tage billeder.</p></div> 
+  <div class="fakta_2"><p class="faktabox_tekst2">Pierre tog det endda så vidt at han ikke kun droppede at tage stock-fotos. Han fjernede også alle stock-fotos fra de tjenester, han solgte sine fotos hos. Han gik fra at være en god forretningsdrivende til at blive en vaskeægte boheme-type på rekordtid.</p></div> 
+
+</main>
+
+</body>
+</Baselayout> 
+
+<style>
+
+
+body {
+        background-color: rgb(39, 28, 24);
+}
+main {
+    margin: 5rem 3rem 5rem 3rem;
+}
+
+h2 {
+font-size: 2.3rem;
+color: white;
+text-align: center;
+padding-bottom: 3rem;
+}
+
+.fakta_stock {
+padding: 1.5rem;
+    background-color: #DBDBDB;
+        margin: 3rem 0rem 3rem 0rem;
+            color: black;
+}
+
+
+/* FAKTABOKS 2 <p/> */
+.fakta_2 {
+    padding:1.5rem;
+    background-color: #112A36;
+        margin: 3rem 0rem 3rem 0rem;
+          color: white;
+}
+
+
+/*  */
+
+
+p {
+    font-size: 1rem;
+    font-family: 'GFS Neohellenic', sans-serif;
+}
+
+@media (min-width: 900px) {
+
+    main {
+    margin: 5rem 3rem 5rem 3rem;
+}
+h2 {
+    font-size: 6rem;
+    padding-bottom: 3rem;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+.fakta_stock {
+    padding: 3rem;
+    margin: 6rem 22rem 6rem 22rem;
+}
+
+/* FAKTABOKS 2 + <p/>*/
+.fakta_2 {
+    padding: 3rem;
+        margin: 6rem 22rem 6rem 22rem;
+}
+/*  */
+}
+
+/* STOCKFOTOS LAYOUT */
+.stockfotos {
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    gap: 10px;
+  }
+
+  .stock1 {
+    grid-column: 4/9;
+    grid-row: 7/11;
+  }
+
+  .stock2 {
+    grid-column: 7/12;
+    grid-row: 5/8;
+  }
+
+  .stock3 {
+    grid-column: 11/18;
+    grid-row: 3/7;
+  }
+
+ .stock4 {
+    grid-column: 8/14;
+    grid-row: 8/11;
+  }
+
+  .stock5 {
+    grid-column: 13/20;
+    grid-row: 7/10;
+  }
+
+</style>
