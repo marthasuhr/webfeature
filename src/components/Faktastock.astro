@@ -5,7 +5,7 @@
 
  <h2>HVAD ER STOCK-FOTOS?</h2>
 <div class="stockfotos">
- <img class="stock1" src="public/img/sammenhold.webp" alt="Hænder der holder sammen">
+<img class="stock1" src="public/img/sammenhold.webp" alt="Hænder der holder sammen">
 <img class="stock2" src="public/img/arbejde-2.webp" alt="To kvinder kigger på computer">
 <img class="stock3" src="public/img/apoteket.webp" alt="En kvinde er på apoteket">
 <img class="stock4" src="public/img/godt-arbejde.webp" alt="To mennesker giver high-five">
@@ -17,9 +17,9 @@
 <style>
     @media (min-width: 900px) {
 
-.fakta_stock {
+.stockfotos {
     padding: 3rem;
-    margin: 6rem 22rem 6rem 22rem;
+    margin: 0rem 5rem 5rem 5rem;
 }
 }
 
@@ -57,3 +57,51 @@
   }
 
 </style>
+
+
+<script>
+  import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+  gsap.registerPlugin(ScrollTrigger);
+
+    gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
+    //GSAP KODE HER
+
+    gsap.to(".stockfotos", {
+      scrollTrigger: {
+        trigger: ".stockfotos",
+        start: "start ",
+        end: "bottom  ",
+        //   scrub: true,
+        markers: true,
+      },
+    });
+
+    gsap.to(".stock1", {
+      scrollTrigger: {
+        trigger: ".stock1",
+        start: "start ",
+        end: "bottom center",
+        //   scrub: true,
+        markers: true,
+      },
+    });
+
+    gsap.from(".stock2", {
+      yPercent: 60,
+      opacity: 0,
+      duration: 0.5,
+      stagger: 0.1,
+      scrollTrigger: {
+        trigger: ".stock2",
+        start: "start 80%",
+        end: "bottom 20%",
+        scrub: true,
+        pin: true,
+        markers: true,
+      },
+    });
+
+  });
+
+  </script> 
