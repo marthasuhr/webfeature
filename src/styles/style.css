@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: var(--brown-8);
+  background-image: url("img/baggrund.webp");
 }
 
 img {
