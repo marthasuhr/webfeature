@@ -56,6 +56,10 @@
     grid-row: 7/10;
   }
 
+.stock_animation {
+	-webkit-animation: focus-in-expand 1s linear both;
+	        animation: focus-in-expand 1s linear both;
+}
 
   @-webkit-keyframes focus-in-expand {
   0% {
@@ -89,7 +93,6 @@
 
 
 
-
 <script>
   import { gsap } from "gsap";
   import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -97,42 +100,52 @@
 
     gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
     //GSAP KODE HER
-
-    gsap.to(".stockfotos", {
-      scrollTrigger: {
-        trigger: ".stockfotos",
-        start: "start ",
-        end: "bottom  ",
-        //   scrub: true,
-        markers: true,
-      },
-    });
-
-    gsap.to(".stock1", {
-      scrollTrigger: {
-        trigger: ".stock1",
-        start: "start ",
-        end: "bottom center",
-        //   scrub: true,
-        markers: true,
-      },
-    });
-
-    gsap.from(".stock2", {
-      yPercent: 60,
-      opacity: 0,
-      duration: 0.5,
-      stagger: 0.1,
-      scrollTrigger: {
-        trigger: ".stock2",
-        start: "start 80%",
-        end: "bottom 20%",
-        scrub: true,
-        pin: true,
-        markers: true,
-      },
-    });
-
   });
 
+  gsap.to(".stockfotos", {
+    scrollTrigger: {
+      trigger: ".stock1",
+      start: "center center",
+      toggleClass: "stock_animation",
+      markers: true,
+    },
+  })
+
+
+  gsap.to(".stockfotos", {
+    scrollTrigger: {
+      trigger: ".stock2",
+      start: "center center",
+      toggleClass: "stock_animation",
+      markers: true,
+    },
+  })
+
+
+  gsap.to(".stockfotos", {
+    scrollTrigger: {
+      trigger: ".stock3",
+      start: "center center",
+      toggleClass: "stock_animation",
+      markers: true,
+    },
+  })
+
+gsap.to(".stockfotos", {
+    scrollTrigger: {
+      trigger: ".stock4",
+      start: "center center",
+      toggleClass: "stock_animation",
+      markers: true,
+    },
+  })
+
+  gsap.to(".stockfotos", {
+    scrollTrigger: {
+      trigger: ".stock5",
+      start: "center center",
+      toggleClass: "stock_animation",
+      markers: true,
+    },
+  })
   </script> 
