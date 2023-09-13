@@ -1,4 +1,5 @@
 ---
+import type { GetStaticPaths } from "astro";
 import Baselayout from "../layouts/Baselayout.astro"
 import Pil from "../components/Pil.astro"
 import Citat from "../components/Citat.astro"
@@ -15,14 +16,15 @@ import Filmrulle from "../components/Filmrulle.astro"
 <Baselayout>
 
 <Landingphoto {img}="img/pierre.webp" >UPERFEKT ER PERFEKT</Landingphoto> 
-<Tekst > <h3>Pierre Falke. Du ved formentligt ikke hvem han er. </h3>
+<Tekst >  <h3>Pierre Falke. Du ved formentligt ikke hvem han er. </h3>
     <p> Men indtil for kort tid siden, så du hans værker et par gange om dagen, hver dag, året rundt. 
 
 Pierre Falcke var en af verdens bedst sælgende stock-fotografer, og han solgte over 2 millioner fotos om året. 
 
-Men Pierre kunne ikke drømme om at bruge sine egne fotos - faktisk kan han ikke fordrage sit eget arbejde. </p>
+Men Pierre kunne ikke drømme om at bruge sine egne fotos - faktisk kan han ikke fordrage sit eget arbejde. </p> 
+
  </Tekst>
- <Liste> <p>Det svarer til én fotolicens hvert 16. sekund</p> <p>Pierre sælger 2 millioner fotos om året</p> <p>Du ser hans fotos ca. 2 gange om dagen</p></Liste> 
+ <Liste {img}="img/lomo-diana-f.webp"> <p>Det svarer til én fotolicens hvert 16. sekund.</p> <p> Pierre sælger 2 millioner fotos om året.<p/> <p> Du ser hans fotos ca. 2 gange om dagen</p></Liste> 
 <Faktastock/>
  <Boks box="box1">Stock-fotos er billeder, der kan købes fra et foto-website. De bruges af aviser, til markedsføring og som indhold på websites. En licens til at bruge et foto koster typisk mellem 10 og 100 kroner, alt afhængig af hvad de skal bruges til.</Boks>
 <Boks box="box1">Stock-fotos bliver ofte kritiseret for at være uden sjæl - det er de der billeder af en læge i hvid kittel med stetoskop om halsen på en meget hvid baggrund eller en meget glad dame fra virksomhedens salgs- eller supportafdeling.</Boks>
