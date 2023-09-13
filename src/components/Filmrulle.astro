@@ -1,35 +1,37 @@
 ---
 ---
 
-<article>
-  <div class="gallery">
-<img src="img/bil-smidt-ud.webp" alt="Bil smidt ud">
-<img src="img/glitch.webp" alt="Bil smidt ud">
-<img src="img/naaede-ikke-hjem.webp" alt="Mand sover">
-<img src="img/lomo-smena-17.webp" alt="sløret billede">
-<img src="img/glitch.webp" alt="Bil smidt ud">
-  </div>
-</article>
+<p>Udklip fra "Lidt i fem":</p>
+<div class="scroll-container">
+    <img src="img/glitch.webp" alt="Glicth på vandet">
+    <img src="img/lomo-smena-17.webp" alt="sløret billede">
+    <img src="img/bil-smidt-ud.webp" alt="Bil smidt ud">
+    <img src="img/glitch.webp" alt="Bil smidt ud">
+    <img src="img/naaede-ikke-hjem.webp" alt="Mand sover">
+</div>
 
 <style>
+   div.scroll-container {
+  background-color: #000000;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 0.5rem;
+}
 
-  .gallery img {
-    width: 20vw;
-    height: auto;
-    margin-right: 10px;
-  }
+div.scroll-container img {
+padding: 0.5rem;
+  height: 36vw;
+}
 
-  @media only screen and (max-width: 800px) {
-    .gallery-container {
-      width: 100%;
-      overflow-x: scroll;
-    }
+ @media (min-width: 1200px) {
 
-    .gallery img {
-      width: 50vw;
-      height: auto;
-      margin-right: 10px;
-    }
-  }
+ div.scroll-container {
+padding: 1rem;
+}
+
+div.scroll-container img {
+padding: 1rem;
+}
+}
 
   </style>
