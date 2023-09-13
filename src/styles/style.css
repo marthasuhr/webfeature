@@ -6,7 +6,8 @@
 }
 
 body {
-  background-image: url("img/baggrund.webp");
+  /* background-image: url("img/baggrund.webp"); */
+  background-color: black;
 }
 
 img {
@@ -24,24 +25,33 @@ h1 {
 h2 {
   font-family: "Odibee Sans", cursive;
   font-size: 2.3rem;
-  color: white;
+  color: rgb(204, 202, 202);
   text-align: center;
+  text-shadow: 5px 5px rgb(0, 0, 0);
 }
 
 h3 {
   font-family: "GFS Neohellenic", sans-serif;
   font-size: var(--font-size-4);
   font-weight: 100;
+  text-shadow: 5px 5px rgb(0, 0, 0);
 }
 
 h5 {
   font-family: "GFS Neohellenic", sans-serif;
   font-size: var(--font-size-4);
   font-weight: 100;
+  text-shadow: 3px 3px rgb(0, 0, 0);
+  color: rgb(204, 202, 202);
 }
 
 p {
   font-size: var(--font-size-1);
+  font-family: "GFS Neohellenic", sans-serif;
+}
+li,
+ol {
+  font-size: var(--font-size-3);
   font-family: "GFS Neohellenic", sans-serif;
 }
 

@@ -1,7 +1,7 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Baselayout from "../layouts/Baselayout.astro"
-import Pil from "../components/Pil.astro"
+import Horisontalbillede from "../components/Horisontalbillede.astro"
 import Citat from "../components/Citat.astro"
 import Faktaboks from "../components/Faktaboks.astro"
 import Faktastock from "../components/Faktastock.astro"
@@ -11,11 +11,12 @@ import Liste from "../components/Liste.astro"
 import Tekst from "../components/Tekst.astro"
 import Boks from "../components/Boks.astro"
 import Filmrulle from "../components/Filmrulle.astro"
+import Baggrundsbillede from "../components/Baggrundsbillede.astro"
 ---
 
 <Baselayout>
 
-<Landingphoto {img}="img/pierre.webp" >UPERFEKT ER PERFEKT</Landingphoto> 
+<Landingphoto {img}="img/pierre.webp">UPERFEKT ER PERFEKT</Landingphoto> 
 <Tekst >  <h3 class="h3pierre">Pierre Falke. Du ved formentligt ikke hvem han er. </h3>
     <p> Men indtil for kort tid siden, så du hans værker et par gange om dagen, hver dag, året rundt. 
 
@@ -24,22 +25,56 @@ Pierre Falcke var en af verdens bedst sælgende stock-fotografer, og han solgte 
 Men Pierre kunne ikke drømme om at bruge sine egne fotos - faktisk kan han ikke fordrage sit eget arbejde. </p> 
  </Tekst>
  <Liste {img}="img/lomo-diana-f.webp"> <h5>Det svarer til én fotolicens hvert 16. sekund.</h5> <br> <h5> Pierre sælger 2 millioner fotos om året.<h5/> <br> <h5>Du ser hans fotos ca. 2 gange om dagen</h5></Liste> 
+
 <Faktastock/>
- <Boks box="box1">Stock-fotos er billeder, der kan købes fra et foto-website. De bruges af aviser, til markedsføring og som indhold på websites. En licens til at bruge et foto koster typisk mellem 10 og 100 kroner, alt afhængig af hvad de skal bruges til.</Boks>
+<Boks box="box1">Stock-fotos er billeder, der kan købes fra et foto-website. De bruges af aviser, til markedsføring og som indhold på websites. En licens til at bruge et foto koster typisk mellem 10 og 100 kroner, alt afhængig af hvad de skal bruges til.</Boks>
 <Boks box="box1">Stock-fotos bliver ofte kritiseret for at være uden sjæl - det er de der billeder af en læge i hvid kittel med stetoskop om halsen på en meget hvid baggrund eller en meget glad dame fra virksomhedens salgs- eller supportafdeling.</Boks>
 <Boks box="box1">Stock-fotos har eksisteret i mange år.
 Før branchen blev digital, tilbød stock-foto virksomhederne billedmapper, der kunne bestilles fra. Men stock-foto branchen var én af de tidlige til at blive fuldt digitaliseret.</Boks>
-<Landingphoto {img}="img/lomo-smena.webp"> PIERRES BERØMMELSE</Landingphoto>
-<Liste> <p>Pierres interesse for foto startede som ganske ung - som 10-årig fik han sin fars gamle Rollei-kamera, og begyndte at skyde løs. Det var før den digitale revolution, så alle Pierres lommepenge blev brugt på filmruller og fremkaldelse af film. Pierre fortsatte med at fotografere på film op gennem gymnasietiden. </p> <p>Pierre over til digital fotografering i starten af 2000’erne, da han begyndte at studere fotografisk kommunikation på DMJX. Her åbnede en ny verden sig: Reklamefotografering i studie, lyssætning og manipulering af billeder i Photoshop blev hans nye stil. </p> <p>På det tidspunkt var stock-foto industrien i starten af en revolution: De første online stock-foto websites begyndte at komme på markedet, men de store, etablerede spillere på markedet holdt lidt igen. Pierre så det for sig: “Om ganske få år er hele branchen digital, og dem der ikke hopper med på den digitale vogn, lukker.”</p> <p>Så Pierre gav sig selv en udfordring: At blive landets bedst sælgende stock-fotograf. Pierre lejede et gammelt, billigt erhvervslokale i Ishøj industri, fik fløjet billige skuespillere ind fra Polen og Baltikum, og fotograferede 10 timer om dagen.</p> <p>Pierres profeti om stock-foto branchen holdt stik. Pierre var allerede en af landets bedst sælgende stock-fotografer, før han blev færdig med studiet på DMJX.</p></Liste>
 
-<Faktaboks/>
-<Boks box="box2">Han søgte inspiration i analog fotografering, i Lomo-bevægelsen, Glitch art og polaroid fotografering, og begyndte stille og roligt at skabe sig en ny stil - en stil med fokus på det uperfekte, og hvor der er et uforudsigeligt element i det at tage billeder.</Boks>
-<Boks box="box2">Pierre tog det endda så vidt at han ikke kun droppede at tage stock-fotos. Han fjernede også alle stock-fotos fra de tjenester, han solgte sine fotos hos. Han gik fra at være en god forretningsdrivende til at blive en vaskeægte boheme-type på rekordtid.</Boks>
+<Baggrundsbillede {img}="img/lomo-smena.webp">PIERRES BERØMMELSE</Baggrundsbillede>
+<Tekst> <p>Pierres interesse for foto startede som ganske ung - som 10-årig fik han sin fars gamle Rollei-kamera, og begyndte at skyde løs. Det var før den digitale revolution, så alle Pierres lommepenge blev brugt på filmruller og fremkaldelse af film. Pierre fortsatte med at fotografere på film op gennem gymnasietiden.</p> <br> <p>Pierre over til digital fotografering i starten af 2000’erne, da han begyndte at studere fotografisk kommunikation på DMJX. Her åbnede en ny verden sig: Reklamefotografering i studie, lyssætning og manipulering af billeder i Photoshop blev hans nye stil. </p> <br> <p>På det tidspunkt var stock-foto industrien i starten af en revolution: De første online stock-foto websites begyndte at komme på markedet, men de store, etablerede spillere på markedet holdt lidt igen. Pierre så det for sig: “Om ganske få år er hele branchen digital, og dem der ikke hopper med på den digitale vogn, lukker.”</p> <br> <p>Så Pierre gav sig selv en udfordring: At blive landets bedst sælgende stock-fotograf. Pierre lejede et gammelt, billigt erhvervslokale i Ishøj industri, fik fløjet billige skuespillere ind fra Polen og Baltikum, og fotograferede 10 timer om dagen.</p> <br> <p>Pierres profeti om stock-foto branchen holdt stik. Pierre var allerede en af landets bedst sælgende stock-fotografer, før han blev færdig med studiet på DMJX.</p></Tekst>
 
-<Citat>Det interessante ligger i fejlen. Et foto med masser af fejl er interessant. 
+<Baggrundsbillede {img}="img/lomo-smena-17.webp">EN SKILLEVEJ</Baggrundsbillede>
+<Tekst> <p>Pierre tjente godt det følgende årti. Men stille og roligt begyndte billederne også at give ham kvalme. Han kunne ikke holde sit eget arbejde ud, og måtte finde et modsvar til alle de blankpolerede fotos. Noget han kunne lave med stolthed. Pierre bestluttede sig for at droppe stock-fotos, og vende tilbage til rødderne.</p> <br> <p>Han søgte inspiration i analog fotografering, i Lomo-bevægelsen, Glitch art og polaroid fotografering, og begyndte stille og roligt at skabe sig en ny stil - en stil med fokus på det uperfekte, og hvor der er et uforudsigeligt element i det at tage billeder.</p> <br> <p>Pierre tog det endda så vidt at han ikke kun droppede at tage stock-fotos. Han fjernede også alle stock-fotos fra de tjenester, han solgte sine fotos hos. Han gik fra at være en god forretningsdrivende til at blive en vaskeægte boheme-type på rekordtid.</p></Tekst>
+
+<Faktaboks {img}="img/filmfoto.webp"></Faktaboks>
+<Boks box="box2">Fotografering med gode, gammeldags filmruller. Analog fotografering stiger for tiden i popularitet, specielt blandt unge, og prisen på filmruller og vintage-kameraer skyder i vejret. Mange fotografer synes at film-fotografering er mere ægte har mere “sjæl.” Analog fotografering er langsommmere, hvert enkelt billede koster penge, og man bliver nødt til at overveje motiv og lys grundigere før der skydes - tænk før du trykker.</Boks>
+<Boks box="box2">Analog fotografering kan gå galt mange steder i processen, og det giver også mulighed for at eksperimentere med “det uperfekte og uforudsigelige i processen.” Man kan f.eks. skyde på for gamle filmruller, arbejde med forskellige teknikker som “lens whacking” og filtre/ting foran objektivet, og man kan pille ved de kemiske processer under fremkaldelse af filmen.</Boks>
+
+<Baggrundsbillede {img}="img/billigt-objektiv.webp">EN NY BEGYNDELSE</Baggrundsbillede>
+<Tekst> <p>Men Pierre er glad for sin beslutning. Indkomsten er lavere nu, men han har stadig lidt penge på kontoen, og studerer nu kunstfotografering på fotoskolen Fatamorgana. Han glæder sig over hver dags kunstneriske eksperimenter, og er for første gang i sit liv rigtig stolt af sit arbejde. Som Pierre selv udtrykker det:</p> </Tekst>
+
+<Horisontalbillede {img}="img/lomo.webp"> <p>Karrieren begynder også så småt også at gå den rette vej: Pierre er begyndt at sælge fotokunst på nettet, og har udgivet sin første foto-bog med titlen “Lidt i fem”, som er en fotografisk odyssé om at slæbe en brandert hjem i de tidlige morgentimer. I forbindelse med udgivelsen af bogen, har han en udstilling på vej i det Kongelige Biblioteks fotoudstilling.</p> </Horisontalbillede>
+
+<Citat> Det interessante ligger i fejlen. Et foto med masser af fejl er interessant. 
 Jeg eksperimenterer med udstyr og teknik, og skaber nye visuelle udtryk. Det uperfekte er perfekt.</Citat>
 
 <Citat>Nu kan jeg leve livet igen. Jeg føler mig frisk. Jeg føler mig fri. Jeg føler mig genfødt.</Citat>
+
+
+
+<Baggrundsbillede {img}="img/sh-skidt.webp">GLITCH</Baggrundsbillede>
+
+<Baggrundsbillede>LOMOGRAFI</Baggrundsbillede>
+<Tekst><p>Et lomografi er egentlig bare et fotografi skudt uden videre omtanke, og med noget foto-udstyr af ret alternativ kvalitet. 
+Lomografier skydes ofte på gode, gammeldags filmruller, men kan også skyde digitalt.
+Det kan måske lyde lidt anti-fotograf-agtigt. Men en del foto-entusiaster dyrker den slags, og ser det som en foto-genre eller endda en livsstil.</p> <br> <p> Der er et stort community af lomografer på Lomography.com, og hardcore lomografer har 10 regler, de lever efter (se <a href="lomography.com/about/the-ten-golden-rules">her</a>  for yderligere info):</p></Tekst>
+<Boks box="box1">
+  <ol>
+  <li>Tag kameraet med overalt</li>
+<li>Brug det på alle tidspunkter – dag og nat</li>
+<li>Lomografi er ikke en forstyrrelse af dit liv, men en del af det</li>
+<li>Prøv hofteskuddet!</li>
+<li>Gå tæt på de objekter du har et ønske om at lomografere</li>
+<li>Tænk ikke (William Firebrace)</li>
+<li>Vær hurtig</li>
+<li>Du behøver ikke at vide hvad du fanger på film på forhånd</li>
+<li>Heller ikke efter
+<li>Du skal ikke bekymre dig om nogen regler</li></ol>
+</Boks>
+
+
 </Baselayout> 
 
 

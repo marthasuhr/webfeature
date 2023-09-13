@@ -2,41 +2,33 @@
 const {img} = Astro.props
 ---
 
-<section class="liste">
-    <img class="pic" src={img} alt="lomo">
- <div class="liste_facts">
-<slot /> 
+<section >
+  <div class="citat_layout">
+    <img class="bag_billede" src={img} alt="lomo">
+ <div class="tekst_paa_billede">
+<slot />
+</div>
 </div>
 </section>
 
 <style>
 @import "https://unpkg.com/open-props";
-.liste {
+.citat_layout {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 10px;
   }
 
-  .liste_facts {
+  .tekst_paa_billede {
     grid-column: 3/7;
-    grid-row: 2/3;
+    grid-row: 6/6;
     z-index: 10;
-color: white;
+color: rgb(239, 239, 239);
   }
 
-  .pic {
+  .bag_billede {
     grid-column: 1/9;
-    grid-row: 1/4;
+    grid-row: 1/8;
     padding-bottom: 10rem;
 }
-
-
-@media (min-width: 900px) {
-h5 {
-    font-size: var(--font-size-7);
-} 
-
-}
-
 </style>
-

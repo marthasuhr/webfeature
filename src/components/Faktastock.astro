@@ -88,7 +88,6 @@
   }
 }
 
-
 </style>
 
 
@@ -141,6 +140,15 @@ gsap.to(".stockfotos", {
   })
 
   gsap.to(".stockfotos", {
+    scrollTrigger: {
+      trigger: ".stock5",
+      start: "center center",
+      toggleClass: "stock_animation",
+      markers: true,
+    },
+  })
+
+   gsap.from(".stockfotos", {
     scrollTrigger: {
       trigger: ".stock5",
       start: "center center",
