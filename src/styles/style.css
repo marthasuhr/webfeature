@@ -7,7 +7,7 @@
 
 body {
   /* background-image: url("img/baggrund.webp"); */
-  background-color: black;
+  background-color: rgb(28, 17, 17);
 }
 
 img {
@@ -34,7 +34,7 @@ h3 {
   font-family: "GFS Neohellenic", sans-serif;
   font-size: var(--font-size-4);
   font-weight: 100;
-  text-shadow: 5px 5px rgb(0, 0, 0);
+  text-shadow: 1px 1px rgb(0, 0, 0);
 }
 
 h5 {

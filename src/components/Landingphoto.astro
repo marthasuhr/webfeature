@@ -30,8 +30,8 @@ const { img } = Astro.props;
   .pierres_b_img {
     grid-column: 1/6;
     grid-row: 1/4;
-	-webkit-animation: blink-1 0.2s ease-in both;
-	        animation: blink-1 0.2s ease-in both;
+	-webkit-animation: blink-1 0.5s ease-in both;
+	        animation: blink-1 0.5s ease-in both;
 }
 
   @-webkit-keyframes blink-1 {
@@ -59,3 +59,12 @@ const { img } = Astro.props;
     /* background-image: url('img/pierre.webp'); */
 
 </style>
+
+<script>
+import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+  gsap.registerPlugin(ScrollTrigger);
+
+  
+
+</script>
