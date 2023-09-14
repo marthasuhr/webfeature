@@ -1,8 +1,22 @@
- <section>
-<slot/>
 
- </section>
+<section class="tekst">
+ <div class="broedtekst">
+<p><slot /> </p>
+</div>
+</section>
 
  <style>
+section{
+    margin: 3rem 3rem 3rem 3rem ;
+}
 
+.broedtekst {
+    color: rgb(204, 202, 202);
+}
+
+ @media (min-width: 900px) {
+section{
+    margin: 8rem 25rem 10rem 25rem ;
+}
+}
  </style>

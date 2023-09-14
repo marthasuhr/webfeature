@@ -1,14 +1,13 @@
+@import "https://unpkg.com/open-props";
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(190, 167, 159);
-}
-
-main {
-  margin: 0rem 3rem 0rem 3rem;
+  /* background-image: url("img/baggrund.webp"); */
+  background-color: rgb(28, 17, 17);
 }
 
 img {
@@ -19,33 +18,44 @@ img {
 
 h1 {
   font-family: "Odibee Sans", cursive;
-  font-size: 3.5rem;
+  font-size: var(--font-size-8);
   text-align: center;
 }
 
 h2 {
   font-family: "Odibee Sans", cursive;
   font-size: 2.3rem;
-  color: white;
+  color: rgb(204, 202, 202);
   text-align: center;
+  text-shadow: 5px 5px rgb(0, 0, 0);
 }
 
 h3 {
   font-family: "GFS Neohellenic", sans-serif;
-  font-size: 1.5rem;
+  font-size: var(--font-size-4);
   font-weight: 100;
+  text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+h5 {
+  font-family: "GFS Neohellenic", sans-serif;
+  font-size: var(--font-size-4);
+  font-weight: 100;
+  text-shadow: 3px 3px rgb(0, 0, 0);
+  color: rgb(204, 202, 202);
 }
 
 p {
-  font-size: 1rem;
+  font-size: var(--font-size-1);
+  font-family: "GFS Neohellenic", sans-serif;
+}
+li,
+ol {
+  font-size: var(--font-size-3);
   font-family: "GFS Neohellenic", sans-serif;
 }
 
 @media (min-width: 900px) {
-  main {
-    margin: 0rem 20rem 0rem 20rem;
-  }
-
   h1 {
     font-size: 8rem;
   }
@@ -55,10 +65,13 @@ p {
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: var(--font-size-5);
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: var(--font-size-4);
+  }
+  h5 {
+    font-size: var(--font-size-6);
   }
 }
