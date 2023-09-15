@@ -6,7 +6,7 @@ const { img } = Astro.props;
 
 <div class="nyt_emne">
      <h2 class="overskrift"><slot /> </h2> 
- <img class="baggrundsbillede" src={img} alt="Baggrundsbillede">
+ <img class="baggrundsbillede" src={img} alt="">
 </div>
 
 
@@ -36,4 +36,79 @@ const { img } = Astro.props;
     text-shadow: 5px 5px rgb(0, 0, 0);
   }
 
+  /* Glitch animista animation på tekst */
+
+
 </style>
+
+
+<script>
+   import { gsap } from "gsap";
+  import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  // gsap.matchMedia().add("(prefers-reduced-motion: no-preference)", () => {
+  //   gsap.to(".overskrift", {
+  //     x: 500,
+  //     scale: 2,
+  //     scrollTrigger: {
+  //       trigger: ".nyt_emne",
+  //       start: "center center", 
+  //       end: "bottom center",
+  //       markers: true,
+  //       scrub: true,
+  //     }, // start the animation when ".box" enters the viewport (once)
+  //   });
+
+  //   gsap.from(".overskrift", {
+  //     x: 500,
+  //     scale: 2,
+  //     duration: 0.5,
+  //     opacity: 0.5,
+  //     ease: "elastic.out(1, 0.5)",
+  //     scrollTrigger: {
+  //       trigger: ".nyt_emne",
+  //       start: "start 80%",
+  //       end: "bottom 20%",
+  //       toggleActions: "play pause resume reset",
+  //     }, // start the animation when ".box" enters the viewport (once)
+  //   });
+
+        gsap.from(".overskrift", {
+      yPercent: 500,
+
+      duration: 0.5,
+      opacity: 0,
+      stagger: 0.1,
+scale: -1,
+
+
+      scrollTrigger: {
+        trigger: ".ball-3",
+        start: "start 80",
+        end: "bottom 20%",
+        scrub: true,
+        markers: true,
+      }, // start the animation when ".box" enters the viewport (once)
+    });
+
+
+  
+  
+
+  // import { gsap } from "gsap";
+  // import { ScrollTrigger } from "gsap/ScrollTrigger";
+  // gsap.registerPlugin(ScrollTrigger);
+
+   
+  // gsap.to(".overskrift", {
+  //   scrollTrigger: {
+  //     trigger: ".nyt_emne",
+  //     start: "start",
+  //     toggleClass: "text-flicker-out-glow",
+  
+  //   },
+  // })
+
+</script>
